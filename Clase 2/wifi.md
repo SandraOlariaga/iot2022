@@ -22,7 +22,7 @@ Estos datos pasan a ser constantes del sketch cuyos valores dependerán de la re
 >const char* PASS = "UN_PASS";
 >
 >void setup() {
->    Serial.begin(9600);
+>    Serial.begin(115200);
 >    Serial.println("");
 >    WiFi.begin(SSID, PASS);
 >    while (WiFi.status() != WL_CONNECTED) {
@@ -65,7 +65,7 @@ Se añade un ciclo While que tiene como función imprimir puntos (“.”) mient
 
 >```c++
 >  Serial.print("Se está conectando a la red WiFi denominada ");
->  Serial.println(ssid);
+>  Serial.println(SSID);
 >  while (WiFi.status() != WL_CONNECTED) {
 >        delay(500);
 >        Serial.print(".");
