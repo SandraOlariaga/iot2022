@@ -27,7 +27,7 @@ Para lograr que sensores y actuadores recolecten y envíen datos del mundo físi
 
 **Arduino** es una plataforma de creación de electrónica de código abierto, la cual está basada en hardware y software libre, flexible y fácil de utilizar para los creadores y desarrolladores. Esta plataforma permite crear diferentes tipos de microordenadores de una sola placa a los que la comunidad de creadores puede darles diferentes tipos de uso.
 
-Para poder entender este concepto, primero vas a tener que entender los conceptos de hardware libre y el software libre. El hardware libre son los dispositivos cuyas especificaciones y diagramas son de acceso público, de manera que cualquiera puede replicarlos. Esto quiere decir que Arduino ofrece las bases para que cualquier otra persona o empresa pueda crear sus propias placas, pudiendo ser diferentes entre ellas pero igualmente funcionales al partir de la misma base.
+Para poder entender este concepto, primero vas a tener que entender los conceptos de hardware libre y el software libre. El hardware libre está constituido por los dispositivos cuyas especificaciones y diagramas son de acceso público, de manera que cualquiera puede replicarlos. Esto quiere decir que Arduino ofrece las bases para que cualquier otra persona o empresa pueda crear sus propias placas, pudiendo ser diferentes entre ellas pero igualmente funcionales al partir de la misma base.
 
 
 ![Imagen03](images/arduino.png)
@@ -57,11 +57,11 @@ El voltaje de funcionamiento de los microprocesadores ESP es de **3,3 V** en com
 
 Por lo tanto, las placas basadas en ESP tendrán un tiempo de ejecución más prolongado, ya que estas placas podrían funcionar a 4 V, mientras que a 4 V las placas Arduino se apagaron.
 
-#### E / S digital, PWM y pines analógicos
+#### E / S digital, PWM (Pulse Width Modulation modulación por ancho de pulso) y pines analógicos
 
 Pines de E / S digitales: la diferencia entre todas las placas cuando se trata de pines de E / S digitales es casi nula. La única diferencia es que las placas más grandes, como la NodeMCU ESP32 (36) y la placa más grande, la Arduino MEGA R3 (54) tiene muchos pines de E / S digitales.
-Pines PWM: las placas basadas en ESP tienen una mejor relación de pines de E / S digitales a pines PWM porque PWM es utilizado por un pin digital. En mi opinión, todas las placas tienen una cantidad suficiente de pines PWM.
-Pines analógicos: en mi opinión, este es el principal inconveniente de los NodeMCU. Porque solo tienen 1 o 2 pines de entrada analógica ether. Por supuesto, puede usar un IC como multiplexor, pero creo que es más fácil de usar si tiene la cantidad correcta de pines analógicos directamente en la placa. Las placas Arduino tienen una buena cantidad de pines de entrada analógica entre 5 y 15.
+Pines PWM: Una señal PWM se se caracteriza en primier lugar por sus valores alto y bajo de tensión, es decir, son los valores mínimo –bajo– y máximo –alto– de tensión que alcanza el pulso que se corresponden con los dos estados lógicos bajo=0 y alto =1, en segundo lugar por su frecuencia que es la inversa del intervalo de tiempo que tarda en realizarse un ciclo completo  freq=1/T, se mide en hercios (Hz = ciclos por segundo) y en tercer lugar por su ciclo de trabajo –duty cicle- que indica el porcentaje de tiempo que el pulso está a nivel alto. Las placas basadas en ESP tienen una mejor relación de pines de E / S digitales a pines PWM porque PWM es utilizado por un pin digital. En mi opinión, todas las placas tienen una cantidad suficiente de pines PWM.
+Pines analógicos: en mi opinión, este es el principal inconveniente de los NodeMCU (microcontrolador), porque solo tienen 1 o 2 pines de entrada analógica ether. Por supuesto, puede usar un IC como multiplexor, pero creo que es más fácil de usar si tiene la cantidad correcta de pines analógicos directamente en la placa. Las placas Arduino tienen una buena cantidad de pines de entrada analógica entre 5 y 15.
 
 #### SPI / I2C / I2S / UART
 
